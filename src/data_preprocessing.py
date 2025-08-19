@@ -36,7 +36,7 @@ encoded = encode_data(process_data)
 
 train_data, test_data = train_test_split(encoded, test_size=.25, random_state=42)
 
-path = os.path.join("data", "process")
+path = os.path.join("data", "processed")
 os.makedirs(path, exist_ok=True)
 
 train_data.to_csv(os.path.join(path, 'Train_process.csv'), index=False)
