@@ -1,6 +1,7 @@
 import pandas as pd
 import pickle
 from xgboost import XGBClassifier
+import yaml
 
 df = pd.read_csv('./data/features/train.csv')
 
